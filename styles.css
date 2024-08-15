@@ -1,0 +1,159 @@
+:root {
+    --bs-primary: #4A7EBB;
+    --primary-blue: #4A7EBB;
+    --accent-green: #4CAF50;
+    --text-dark: #333333;
+    --bg-light: #F8F9FA;
+}
+
+/* Ensure that the `bg-primary` class is set to use the overridden color */
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+.hero {
+    background-color: var(--bg-light);
+    padding: 120px 0 80px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    color: var(--primary-blue);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: var(--accent-green);
+    border-color: var(--accent-green);
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.btn-outline-primary {
+    color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+}
+
+.contact-form .form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    background-color: transparent;
+    color: white;
+    padding: 15px 0;
+}
+
+.contact-form .form-control::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.president-name {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+.rounded-image {
+    border-radius: 15px;       /* Rounds the corners */
+    opacity: 0.9;              /* Adjusts transparency (0.0 is fully transparent, 1.0 is fully opaque) */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow around the image */
+    transition: opacity 0.3s ease; /* Smooth transition effect for opacity changes */
+}
+
+.rounded-image:hover {
+    opacity: 1.0; /* Makes the image fully opaque on hover */
+}
+
+#contact {
+    background-color: #4A7EBB; /* Ensures the background is the new primary color */
+    color: #ffffff; /* Ensures all text within this section is white */
+}
+
+#contact h2,
+#contact p,
+#contact .form-control::placeholder,
+#contact .form-control {
+    color: #ffffff; /* Ensures headings, paragraphs, and form text are white */
+}
+
+#contact .form-control {
+    background-color: rgba(255, 255, 255, 0.2); /* Optional: Adds slight transparency to input backgrounds */
+    border-color: #ffffff; /* Makes input borders white */
+}
+
+#contact .form-control:focus {
+    border-color: #ffffff; /* Keeps border white on focus */
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25); /* Adds a white focus shadow */
+}
+
+#contact .btn-light {
+    background-color: #ffffff; /* Ensures the submit button is white */
+    color: #4A7EBB; /* Matches the text color of the button to your primary color */
+}
+
+#contact .btn-light:hover {
+    background-color: #e6e6e6; /* Light gray for hover effect */
+    color: #4A7EBB; /* Maintains the primary color for button text */
+}
